@@ -1,0 +1,20 @@
+.tile-menu{
+  position: fixed;
+  right: 0; top: 0;
+  width: 300px; height: 100vh;
+  border-left: 1px solid #FFF;
+}
+
+.tile-menu h3{
+  padding: 8px;
+  margin: 0;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #FFF;
+  font-weight: 600;
+}
+
+.tile-menu .piece{ width: 32px; height: 32px; }
+.piece.selected{ box-shadow: 0 0 0 2px #333, 0 0 0 3px #FFF  }

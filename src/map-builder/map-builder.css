@@ -1,0 +1,20 @@
+.map-builder{
+  position: relative;
+  width: 100%; height: 100vh;
+}
+
+.map-builder .main{
+  position:relative;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  padding-left: 200px;
+  padding-right: 300px;
+  width: 100%; height: 100vh;
+}
+
+.map-builder .map-frame{
+  width: 100%; height: 100%;
+  padding: 56px 16px 16px 16px;
+}

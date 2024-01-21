@@ -1,0 +1,6 @@
+.tab-bar{
+  position: absolute;
+  top: 0; left: 200px;
+  width: calc(100% - 500px); height: 40px;
+  border-bottom: 1px solid #FFF;
+}

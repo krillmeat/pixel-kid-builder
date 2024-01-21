@@ -1,18 +1,21 @@
-.piece-menu{
-  position: fixed;
-  right: 0; top: 0;
-  width: 300px; height: 100vh;
-  border-left: 1px solid #FFF;
-}
-
-
-
 .piece-builder .main{
   display: flex;
-  align-items: center;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   padding-right: 300px;
   width: 100%; height: 100vh;
+}
+
+.piece-builder .main > button{
+  margin-top: 32px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  padding: 8px 12px;
+  background: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .piece-frame{
@@ -30,14 +33,22 @@
 
 .piece-frame .piece-row:last-of-type{ border-bottom: none }
 
-.piece-frame .piece-row .piece{
+.piece-frame .piece-row .pixel{
   width: 30px; height: 30px;
   border-right: 1px solid #FFF;
 }
 
-.piece-frame .piece-row .piece:last-of-type{ border-right: none }
+.piece-frame .piece-row .pixel:last-of-type{ border-right: none }
 
 
-.color-picker{ display: flex; flex-wrap: wrap; padding: 10px; }
-.color-choice{ width: 20px; height: 20px; margin: 5px; }
-  .color-choice.selected{ border: 2px solid pink}
+.piece-picker ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 8px;
+}
+
+.piece-picker ul li{
+  margin: 2px;
+}

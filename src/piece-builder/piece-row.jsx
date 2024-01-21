@@ -1,15 +1,15 @@
-import Piece from "./piece";
+import Pixel from "./pixel";
 
-const PieceRow = () => {
+const PieceRow = ({row}) => {
   return <div className='piece-row'>
-    <Piece/>
-    <Piece/>
-    <Piece/>
-    <Piece/>
-    <Piece/>
-    <Piece/>
-    <Piece/>
-    <Piece/>
+    <Pixel row={row} col={0} />
+    <Pixel row={row} col={1} />
+    <Pixel row={row} col={2} />
+    <Pixel row={row} col={3} />
+    <Pixel row={row} col={4} />
+    <Pixel row={row} col={5} />
+    <Pixel row={row} col={6} />
+    <Pixel row={row} col={7} />
   </div>
 }
 

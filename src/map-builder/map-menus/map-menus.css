@@ -1,0 +1,53 @@
+.map-menu,
+.map-browser{
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+
+.map-menu{right:0; border-left: 1px solid #FFF;width: 300px;}
+
+
+/* MAP BROWSER */
+.map-browser{z-index:999;left:0; border-right: 1px solid #FFF;width: 200px;}
+
+.map-browser .region{
+  width: 100%;
+}
+
+.map-browser .region > button{
+  position: relative;
+  width: 100%;
+  border: none;
+  background: none;
+  color: #FFF;
+  font-size: .8rem;
+  text-align: left;
+  letter-spacing: 2px;
+  padding: 8px 8px 8px 24px;
+}
+
+.map-browser .region > button::before{
+  content: '>';
+  position: absolute;
+  left: 8px;
+  transform: rotate(90deg);
+}
+
+.map-browser .region .list-wrap > ul{
+  width: 100%;
+  color: #FFF;
+  font-size: .7rem;
+  text-transform: uppercase;
+}
+
+.map-browser .region .list-wrap > ul li{
+  width: 100%;
+  padding: 4px;
+  padding-left: 32px;
+  letter-spacing: 1px;
+}
+
+.map-browser .region .list-wrap > ul li:hover{
+  background: #666;
+}

@@ -1,0 +1,82 @@
+.piece-menu{
+  position: fixed;
+  right: 0; top: 0;
+  width: 300px; height: 100vh;
+  border-left: 1px solid #FFF;
+}
+
+.piece-menu h3{
+  padding: 8px;
+  margin: 0;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #FFF;
+  font-weight: 600;
+}
+
+/* VIEW */
+
+.piece-menu .view{
+  border-bottom: 1px solid #FFF;
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  color: #FFF;
+}
+
+.piece-menu .view > div{
+  padding: 8px 12px 8px 8px;
+  border-right: 1px solid #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .75rem;
+}
+
+.piece-menu .view ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.piece-menu .view ul li{ 
+  height: 32px;
+  padding: 8px 12px;
+  display: flex;
+  border-right: 1px solid #FFF;
+}
+
+.piece-menu .view ul li button{
+  border: none;
+  background: none;
+  color: #FFF;
+  padding: 0px;
+  text-transform: uppercase;
+  font-size: .7em;
+  letter-spacing: 1px;
+}
+
+  .piece-menu .view.single ul li.choice.single{ background: #666; }
+
+/* COLOR PICKER */
+.color-picker{ 
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #FFF;
+}
+
+.color-picker > div { 
+  padding: 8px;
+  color: #FFF;
+  letter-spacing: 2px;
+  font-size: .9rem;
+  text-align: center;
+}
+.color-picker ul{ 
+  display: flex; 
+  padding: 8px;
+  border-right: 1px solid #FFF;
+}
+.color-choice{ width: 20px; height: 20px; margin: 5px; }
+  .color-choice.selected{ box-shadow: 0 0 0 2px #333, 0 0 0 3px #FFF  }
